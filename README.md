@@ -1,4 +1,4 @@
-# PWA-text-editor
+# Not Another Text Editor
 
 [![MIT](https://img.shields.io/badge/License-MIT-yellowgreen.svg)](https://choosealicense.com/licenses/mit/)
 
