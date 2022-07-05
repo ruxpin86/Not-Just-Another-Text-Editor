@@ -69,6 +69,6 @@ THEN I should have proper build scripts for a webpack application
 
 For any questions, you can either reach out to me on GitHub or via e-mail
 
-- Username: @addiguskey
-- GitHub Link: https://github.com/addiguskey
-- E-mail: addisonguskey@gmail.com
+- Username: @ruxpin86
+- GitHub Link: https://github.com/ruxpin86
+- E-mail: will.glynn@gmail.com
