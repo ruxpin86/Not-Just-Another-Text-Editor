@@ -30,8 +30,8 @@ export default class {
       console.log(localData);
       console.log(header);
       console.log("================");
-      this.editor.setValue(data.length > 0 ? data : localData || header);
-      // this.editor.setValue(data[0] || localData || header);
+      // this.editor.setValue(data.length > 0 ? data : localData || header);
+      this.editor.setValue(data || localData || header);
     });
 
     this.editor.on("change", () => {
