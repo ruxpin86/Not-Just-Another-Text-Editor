@@ -2,6 +2,8 @@
 
 [![MIT](https://img.shields.io/badge/License-MIT-yellowgreen.svg)](https://choosealicense.com/licenses/mit/)
 
+Depolyed Link: https://not-just-another-text-editor2.herokuapp.com/
+
 # User Story
 
 ```
@@ -22,7 +24,7 @@ SO THAT I can reliably retrieve them for later use
 1. Clone this SSH Key link in your Terminal (Mac) or gitBash(Windows).
 
 ```
-git@github.com:addiguskey/PWA-text-editor.git
+https://github.com/ruxpin86/Not-Just-Another-Text-Editor
 ```
 
 2. This app uses [idb](https://www.npmjs.com/package/idb). You can simply install these by running "npm i" on your Integrated Terminal in VS-Code
