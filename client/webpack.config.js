@@ -5,7 +5,7 @@ const { InjectManifest } = require("workbox-webpack-plugin");
 const WorkboxPlugin = require("workbox-webpack-plugin");
 
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
-// TODO: Add CSS loaders and babel to webpack. **
+// TODO: Add CSS loaders and babel to webpack.
 
 module.exports = () => {
   return {
@@ -22,19 +22,14 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "JATE",
+        favicon: "./favicon.ico",
+        title: "Text Editor",
       }),
-
       new WorkboxPlugin.GenerateSW(),
-
-      new InjectManifest({
-        swSrc: "./src-sw.js",
-        swDest: "src-sw.js",
-      }),
       new WebpackPwaManifest({
-        name: "JATE",
-        short_name: "JATE",
-        description: "Text Editor",
+        name: "TextEditor",
+        short_name: "TextEditor",
+        description: "Keep track of important tasks!",
         background_color: "#7eb4e2",
         theme_color: "#7eb4e2",
         start_url: "/",
@@ -46,7 +41,16 @@ module.exports = () => {
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join("assets", "icons"),
           },
+          // {
+          //   src: path.resolve('favicon.ico'),
+          //   sizes: [1],
+          //   destination: path.join('assets', 'icons'),
+          // },
         ],
+      }),
+      new InjectManifest({
+        swSrc: "./src-sw.js",
+        swDest: "src-sw.js",
       }),
     ],
 
